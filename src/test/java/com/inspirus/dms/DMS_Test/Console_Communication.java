@@ -66,7 +66,7 @@ public class Console_Communication {
 	    
 	    my_element.insert_default_message_btn.click();
 	    //8. Click preview message
-	    my_element.
+	    my_element.preview_message.click();
 	    
 	    //9.在Send Preview选框中输入邮箱地址
 	    

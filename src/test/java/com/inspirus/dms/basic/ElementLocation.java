@@ -79,6 +79,6 @@ public class ElementLocation {
 	public WebElement insert_default_message_btn = driver.findElement(By.xpath("//a[contains(text(),'insert default message')]"));
 	
 	// insert default message	
-	public WebElement preview_message = driver.findElement(By.xpath("//a[contains(text(),'insert default message')]"));	
+	public WebElement preview_message = driver.findElement(By.xpath("//input[@value='preview message']"));	
 		
 }
