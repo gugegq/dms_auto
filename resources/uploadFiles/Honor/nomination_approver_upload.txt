@@ -1,0 +1,13 @@
+# File requirements:
+# Accepted File types: .csv or .txt
+# Delimiter type: pipe or comma
+# Character Qualifier:  any "text" data should be encased in quotes, including any EMPLOYEE_ID's that have leading zero's.
+# Headers are required
+#
+# EMPLOYEE_ID - required 
+# USER_GROUP - required
+#
+EMPLOYEE_ID,USER_GROUP
+"ga001","VBU1"
+"ga002","VBU1"
+
