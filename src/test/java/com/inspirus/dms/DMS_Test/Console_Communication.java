@@ -36,37 +36,39 @@ public class Console_Communication {
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 		//Login into DMS_Console page.
 		frontLoginPage.login("mlongoria", "123456", driver);
-//	    Thread.sleep(1000*10);
 	    //Customer Search->Programs->Communication
 	    //Customer ID=D01000 Program Code=1801 Communication=Packet Confirmation
 	    //1. Click Customer Search
-		my_element.cust_Search.click();
-//		Thread.sleep(1000*5);
+		driver.findElement(By.xpath(my_element.cust_Search)).click();
 	    //2. Input Customer ID=D01000， and click Search
-		my_element.cust_Id.clear();
-		my_element.cust_Id.sendKeys("D01000");
-//		Thread.sleep(1000*5);
-		my_element.cust_Id_Search.click();
+		driver.findElement(By.xpath(my_element.cust_Id)).clear();
+		driver.findElement(By.xpath(my_element.cust_Id)).sendKeys("D01000");
+		driver.findElement(By.xpath(my_element.cust_Id_Search)).click();
 	    //3. Click programs
-	    my_element.programs.click();
+	    driver.findElement(By.xpath(my_element.programs)).click();
 	    //4. Choose program code = 1801
-	    my_element.programs_code.click();
+	    driver.findElement(By.xpath(my_element.programs_code)).click();
 	    //5. Click communication
-	    my_element.communications.click();
+	    driver.findElement(By.xpath(my_element.communications)).click();
+	    Thread.sleep(1000*20);
 	    //6. Click Communication Events List -> add
-	    my_element.add_btn.click();	    
+	    driver.findElement(By.xpath(my_element.add_btn)).click();
+	    Thread.sleep(1000*20);
 	    //7. Input all required fields and click 'insert default message'
-	    my_element.packet_confirmation.click();
-	    my_element.active.click();
-	    my_element.timing.sendKeys("1");
-	    my_element.before.click();
-	    my_element.anniversary.click();
-	    my_element.email.click();
-	    my_element.recipient.click();
-	    
-	    my_element.insert_default_message_btn.click();
+	    driver.findElement(By.xpath(my_element.packet_confirmation)).click();
+	    driver.findElement(By.xpath(my_element.active)).click();
+	    driver.findElement(By.xpath(my_element.timing)).sendKeys("1");
+	    driver.findElement(By.xpath(my_element.before)).click();
+	    driver.findElement(By.xpath(my_element.anniversary)).click();
+	    driver.findElement(By.xpath(my_element.email)).click();
+	    driver.findElement(By.xpath(my_element.recipient)).click();
+	    driver.findElement(By.xpath(my_element.from_alias)).sendKeys("dms_test");
+	    driver.findElement(By.xpath(my_element.message)).clear();
+	    // Clear 'insert default message'
+	    driver.findElement(By.cssSelector("input"));
+	    driver.findElement(By.xpath(my_element.insert_default_message_btn)).click();
 	    //8. Click preview message
-	    my_element.preview_message.click();
+	    driver.findElement(By.xpath(my_element.preview_message)).click();
 	    
 	    //9.在Send Preview选框中输入邮箱地址
 	    

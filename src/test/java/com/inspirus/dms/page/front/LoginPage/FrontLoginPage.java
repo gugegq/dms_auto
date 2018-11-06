@@ -10,17 +10,20 @@ import com.thoughtworks.selenium.Selenium;
 
 public class FrontLoginPage {
 	
-	Selenium selenium;
+	WebDriver driver;
 	
 	//login account input box
 	@FindBy(name="username")
 	public WebElement username;
+//	public WebElement username = driver.findElement(By.name("username"));
 	//password input box
 	@FindBy(name="password")
 	public WebElement password;
+//	public WebElement password = driver.findElement(By.name("password"));;
 	//login button
 	@FindBy(id="loginformsubmit")
 	public WebElement loginBtn;
+//	public WebElement loginBtn = driver.findElement(By.id("loginformsubmit"));;
 	//forgot Password link
 	@FindBy (linkText="Forgot Password?")
 	public WebElement forgotPassword;
