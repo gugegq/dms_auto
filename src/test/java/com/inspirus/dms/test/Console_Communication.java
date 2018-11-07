@@ -1,20 +1,13 @@
-package com.inspirus.dms.DMS_Test;
-
-import java.util.concurrent.TimeUnit;
+package com.inspirus.dms.test;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.FindBy;
-
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ElementLocation;
-
-import com.inspirus.dms.page.front.LoginPage.FrontLoginPage;
+import com.inspirus.dms.page.FrontLoginPage;
 
 //SA4_PacketCommunication Check
 public class Console_Communication {
