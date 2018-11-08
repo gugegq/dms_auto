@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.page.FrontLoginPage;
 
-public class Test_Clear_Email {
+public class Test_ClearEmail {
 	
 	WebDriver driver;
 	
