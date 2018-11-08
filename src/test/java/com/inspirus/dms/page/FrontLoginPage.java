@@ -27,7 +27,7 @@ public class FrontLoginPage {
 	public WebElement forgotPassword;
 	
 	
-	//Login into Gmail Email
+	//Login into Gmail
 	//Email Username
 	@FindBy(id="identifierId")
 	public WebElement email_username;
@@ -36,7 +36,13 @@ public class FrontLoginPage {
 	//Email Password
 	public static final String email_password = ".I0VJ4d > div:nth-child(1) > input:nth-child(1)";
 	//登陆按钮
-	public static final String Btn_login = "#passwordNext > content:nth-child(3) > span:nth-child(1)";	
+	public static final String Btn_login = "#passwordNext > content:nth-child(3) > span:nth-child(1)";
+	
+	//Clear Gmail
+	public static final String check_box = "span.T-Jo";
+	//Recycle
+	public static final String recycle = ".nX > div:nth-child(1)";
+	
 		
 	// DMS_Console -> Customer Search
 	//xpath=//a[contains(text(),'Customer Search')]
@@ -71,4 +77,15 @@ public class FrontLoginPage {
 		driver.findElement(By.cssSelector(email_password)).sendKeys(login_password);		
 		driver.findElement(By.cssSelector(Btn_login)).click();
 	}
+	
+	// Clear Gmail
+	public void clear_Email(WebDriver driver) throws Exception {
+
+		driver.findElement(By.cssSelector(check_box)).click();
+		Thread.sleep(1000*5);
+		driver.findElement(By.cssSelector(recycle)).click();
+		Thread.sleep(1000*5);
+	}	
+	
+	
 }
