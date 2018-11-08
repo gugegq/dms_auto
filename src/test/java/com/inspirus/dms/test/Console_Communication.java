@@ -1,5 +1,6 @@
 package com.inspirus.dms.test;
 
+import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ElementLocation;
-import com.inspirus.dms.example.LoginEmail;
+import com.inspirus.dms.basic.LoginEmail;
 import com.inspirus.dms.page.FrontLoginPage;
 
 //SA4_PacketCommunication Check
