@@ -64,7 +64,7 @@ public class FrontLoginPage {
 		loginBtn.click();
 	}
 	
-	// Log into the DMS_Console
+	// Log into Gmail
 	public void login_Email(String login_name,
 			String login_password, WebDriver driver) throws Exception {
 		//Input username

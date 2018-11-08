@@ -7,11 +7,11 @@ public class LoginEmail {
 	
 	WebDriver driver;
 	
-	public void LoginPageTest() throws Exception {
+	public void LoginEmailTest() throws Exception {
 		
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 //		Login into Gmail.
-		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);;
+		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
 		
 	}
 	

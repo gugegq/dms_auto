@@ -7,7 +7,7 @@ public class ClearEmail {
 	
 	WebDriver driver;
 	
-	public void ClearPageTest() throws Exception {
+	public void ClearEmailTest() throws Exception {
 		
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 		//Login Gmail
