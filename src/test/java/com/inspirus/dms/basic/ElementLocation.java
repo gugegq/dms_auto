@@ -75,7 +75,11 @@ public class ElementLocation {
 	// insert default message	
 	public static final String  insert_default_message_btn = "//a[contains(text(),'insert default message')]";
 	
-	// insert default message	
+	// Preview Message Button	
 	public static final String  preview_message = "//input[@value='preview message']";	
+	// Send Preview	
+	public static final String  send_preview = "//input[@id='send_preview_to']";	
+	// Send Button	
+	public static final String  send_btn = "//input[@id='send']";
 		
 }
