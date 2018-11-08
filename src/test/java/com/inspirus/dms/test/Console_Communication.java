@@ -20,7 +20,6 @@ public class Console_Communication {
 	@Before
 	public void setUp() throws Exception {
 		driver = Browsers.myDriver();
-//		driver = Browsers.myDriver_Email();
 	}
 	
 	
@@ -31,11 +30,7 @@ public class Console_Communication {
 		ElementLocation my_element = new ElementLocation();
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 	    LoginEmail lg_email = new LoginEmail();
-		ClearEmail cl_email = new ClearEmail();		
-		
-		//Clear Gmail
-		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
-		frontLoginPage.clear_Email(driver);
+		ClearEmail cl_email = new ClearEmail();
 		
 		//Login into DMS_Console page.
 		frontLoginPage.login("mlongoria", "123456", driver);
