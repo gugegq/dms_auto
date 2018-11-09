@@ -87,6 +87,7 @@ public class ElementLocation {
 	
 	// Email_All
 	// Email Button
-	public static final String  received_email = "#\\:5c";
+	public static final String  frame_received_email = ".alj";
+	public static final String  received_email = "#\\:3f";
 		
 }

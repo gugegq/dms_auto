@@ -25,7 +25,11 @@ public class Test_CheckEmail {
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 //		Login into DMS_Console page.
 		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
-		driver.findElement(By.cssSelector(ElementLocation.received_email)).click();
+		Thread.sleep(1000*5);
+		driver.switchTo().frame(driver.findElement(By.cssSelector(ElementLocation.frame_received_email)));
+		driver.findElement(By.cssSelector(ElementLocation.received_email)).click();		
+		driver.switchTo().defaultContent();
+//		driver.findElement(By.cssSelector(ElementLocation.received_email)).click();
 		
 	}
 	
