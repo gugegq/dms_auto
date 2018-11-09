@@ -1,4 +1,4 @@
-package com.inspirus.dms.test;
+package com.inspirus.dms.test.Console;
 
 import static org.junit.Assert.*;
 import org.junit.After;
@@ -81,7 +81,8 @@ public class Console_Communication {
 	    driver.findElement(By.xpath(my_element.send_preview)).sendKeys("dmstest117@gmail.com");	    
 	    //10.点击Send按钮
 	    driver.findElement(By.xpath(my_element.send_btn)).click();
-////	    //11.到邮箱中查收邮件
+	    Thread.sleep(1000*5);
+	    //11.到邮箱中查收邮件
 //	    lg_email.LoginEmailTest();
 //	    //12.比对内容检查
 //	    
