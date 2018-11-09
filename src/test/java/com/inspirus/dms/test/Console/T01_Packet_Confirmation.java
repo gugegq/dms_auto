@@ -13,7 +13,7 @@ import com.inspirus.dms.basic.LoginEmail;
 import com.inspirus.dms.page.FrontLoginPage;
 
 //SA4_PacketCommunication Check
-public class Console_Communication {
+public class T01_Packet_Confirmation {
 	
 	WebDriver driver;
 	
