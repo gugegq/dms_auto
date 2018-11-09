@@ -48,10 +48,10 @@ public class Console_Communication {
 	    driver.findElement(By.xpath(my_element.programs_code)).click();
 	    //5. Click communication
 	    driver.findElement(By.xpath(my_element.communications)).click();
-	    Thread.sleep(1000*20);
+	    Thread.sleep(1000*8);
 	    //6. Click Communication Events List -> add
 	    driver.findElement(By.xpath(my_element.add_btn)).click();
-	    Thread.sleep(1000*20);
+	    Thread.sleep(1000*5);
 	    //7. Input all required fields and click 'insert default message'
 	    driver.findElement(By.xpath(my_element.packet_confirmation)).click();
 	    driver.findElement(By.xpath(my_element.active)).click();
@@ -61,22 +61,32 @@ public class Console_Communication {
 	    driver.findElement(By.xpath(my_element.email)).click();
 	    driver.findElement(By.xpath(my_element.recipient)).click();
 	    driver.findElement(By.xpath(my_element.from_alias)).sendKeys("dms_test");
-	    driver.findElement(By.xpath(my_element.message)).clear();
-	    // Clear 'insert default message'
-//	    driver.findElement(By.cssSelector("input"));
+	    Thread.sleep(1000*2);
+	    // Clear the message before click 'insert default message' button
+	    // Switch to Frame page
+	    //frame()查找和定位iframe框架的方法(switch_to)
+	    //获取Frame内标签
+	    driver.switchTo().frame(driver.findElement(By.cssSelector(my_element.frame_message)));
+	    // Locate the message
+	    driver.findElement(By.cssSelector(my_element.message)).clear();
+	    //跳出Frame
+	    driver.switchTo().defaultContent();
+	    Thread.sleep(1000*3);
+	    // Click 'insert default message button'
 	    driver.findElement(By.xpath(my_element.insert_default_message_btn)).click();
 	    //8. Click preview message
 	    driver.findElement(By.xpath(my_element.preview_message)).click();	    
 	    //9.在Send Preview选框中输入邮箱地址
+	    driver.findElement(By.xpath(my_element.send_preview)).clear();
 	    driver.findElement(By.xpath(my_element.send_preview)).sendKeys("dmstest117@gmail.com");	    
 	    //10.点击Send按钮
 	    driver.findElement(By.xpath(my_element.send_btn)).click();
-//	    //11.到邮箱中查收邮件
-	    lg_email.LoginEmailTest();
-	    //12.比对内容检查
-	    
-	    //13.清空邮箱
-	    cl_email.ClearEmailTest();
+////	    //11.到邮箱中查收邮件
+//	    lg_email.LoginEmailTest();
+//	    //12.比对内容检查
+//	    
+//	    //13.清空邮箱
+//	    cl_email.ClearEmailTest();
 	    
 	    
 	}

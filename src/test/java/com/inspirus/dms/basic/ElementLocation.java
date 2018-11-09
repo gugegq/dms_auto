@@ -69,9 +69,11 @@ public class ElementLocation {
 	
 	// Communication Content
 	// From(alias)
-	public static final String  from_alias = "//select[@id='from_alias']";
+	public static final String  from_alias = "//input[@id='from_alias']";
+	// Frame Message
+	public static final String  frame_message = "iframe.cke_wysiwyg_frame";
 	// Message
-	public static final String  message = "//td[contains(text(),'[ENTER CONTENT HERE]')]";
+	public static final String  message = "#templateBody > tbody > tr > td";
 	// insert default message	
 	public static final String  insert_default_message_btn = "//a[contains(text(),'insert default message')]";
 	
