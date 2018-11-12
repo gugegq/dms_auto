@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.Wait;
 import com.inspirus.dms.page.FrontLoginPage;
 
 public class Test_CheckEmail {
@@ -25,11 +26,13 @@ public class Test_CheckEmail {
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 //		Login into DMS_Console page.
 		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
-		Thread.sleep(1000*5);
-		driver.switchTo().frame(driver.findElement(By.cssSelector(ElementLocation.frame_received_email)));
-		driver.findElement(By.cssSelector(ElementLocation.received_email)).click();		
+		Thread.sleep(1000*2);
+		driver.switchTo().frame(driver.findElement(By.className(ElementLocation.frame_received_email)));
+		Thread.sleep(1000*10);
+		String xpth=".Tm .aE3 .yO .yW .yP";
+		driver.findElement(By.className(xpth)).wait();
+		driver.findElement(By.className(xpth)).click();		
 		driver.switchTo().defaultContent();
-//		driver.findElement(By.cssSelector(ElementLocation.received_email)).click();
 		
 	}
 	
