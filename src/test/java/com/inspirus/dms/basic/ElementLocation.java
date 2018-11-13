@@ -85,9 +85,48 @@ public class ElementLocation {
 	public static final String  send_btn = "//input[@id='send']";
 	
 	
-	// Email_All
-	// Email Button
-	public static final String  frame_received_email = "a1j";
-	public static final String  received_email = "#\\:3f";
+//	// Email_All
+//	// Email Button
+//	public static final String  frame_received_email = "a1j";
+//	public static final String  received_email = "//*[@id=\\\":3i\\\"]/span";
+//	// Email Content
+//	// Meredith Young - Service Recognition Award Packet
+//	public static final String  title_email = "//*[@id=\":7j\"]";
+//	// Service Award Packet Shipped for - Meredith Young
+//	public static final String  head_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/h2";
+//	/*
+//	 * 	Thank you for supporting the TEST, Service Award Program. 
+//	 *  Your role is critical to the success of the program. 
+//	 *  It is important to recognize and appreciate our employees for their continued service in helping make TEST a great company.
+//	 */
+//	public static final String  body1_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[1]";
+//	// You recently should have received a Service Award Packet for Meredith Young.
+//	public static final String  body2_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[2]";
+//	// It was sent to:
+//	public static final String  body3_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[3]";
+//	// ##%saddress1%##
+//	public static final String  body4_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[4]";
+//	// ##%saddress2%##
+//	public static final String  body5_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[5]";
+//	// ##%saddress3%##
+//	public static final String  body6_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[6]";
+//	// ##%saddress4%##
+//	public static final String  body7_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[7]";
+//	// ##%scity%##, ##%sstate%## ##%szip%##
+//	public static final String  body8_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[8]";
+//	// ##%scountry%##
+//	public static final String  body9_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[8]";		
+//	// If you have not received this delivery or it was damaged in transit, please contact us via e-mail or call 888.332.7110 to order a replacement.
+//	public static final String  body10_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[9]";
+//	/*
+//	 * Meredith Young will be receiving an e-mail directly from TEST with information on how to choose their service award. 
+//	 * Please take the time to personally acknowledge their contributions to the company. 
+//	 * This is a great opportunity to recognize your employee in a memorable way.
+//	 * */
+//	public static final String  body11_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[10]";
+//	// Thank you again for your participation and for helping TEST in creating a company that cares about its people.
+//	public static final String  body12_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/text()[11]";	
+
+
 		
 }
