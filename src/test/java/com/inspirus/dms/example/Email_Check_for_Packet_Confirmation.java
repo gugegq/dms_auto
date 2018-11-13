@@ -11,7 +11,7 @@ import com.inspirus.dms.basic.ElementLocation;
 import com.inspirus.dms.basic.Wait;
 import com.inspirus.dms.page.FrontLoginPage;
 
-public class Test_CheckEmail {
+public class Email_Check_for_Packet_Confirmation {
 	
 	WebDriver driver; 
 	
@@ -25,15 +25,14 @@ public class Test_CheckEmail {
 		
 		// Email_All
 		// Email Button
-		final String  frame_received_email = "a1j";
-		final String  received_email_xpath = "#\\3a 3j > span";
-		final String  received_email_css = "#\\3a 3j > span";
+		final String  received_email_xpath = "//*[@id=\":3j\"]/span";
+		final String  received_email_css = ".xS .y6 .bog > span";
 
 		// Email Content
 		// Meredith Young - Service Recognition Award Packet
-		final String  title_email = "//*[@id=\":7j\"]";
+		final String  title_email = ".nH .no .nn .ar4 .AO .aeF .id .iY .Bu .if .byY .nH .ha .hP";
 		// Service Award Packet Shipped for - Meredith Young
-		final String  head_email = "//*[@id=\"m_3676574496665937459templateBody\"]/tbody/tr/td/h2";
+		final String  head_email = ".nH .bkL .bAt .if .hx .ie .gs .gt .a3s .m_4919471788479975915bodyContent > h2";
 		/*
 		 * 	Thank you for supporting the TEST, Service Award Program. 
 		 *  Your role is critical to the success of the program. 
@@ -74,14 +73,14 @@ public class Test_CheckEmail {
 		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
 		Thread.sleep(1000*10);
 //		String xpath = "//*[@id=\":7l\"]/span";
-//		wt.waitForElementToBePresent(driver, driver.findElement(By.xpath(xpath)));
-//		driver.findElement(By.xpath(xpath)).click();
-		wt.waitForElementToBePresent(driver, driver.findElement(By.cssSelector(received_email_xpath)));
-		driver.findElement(By.cssSelector(received_email_xpath));
-		Thread.sleep(1000*10);
+//		wt.waitForElementToBePresent(driver, driver.findElement(By.xpath(received_email_xpath)));
+//		driver.findElement(By.xpath(received_email_xpath)).click();
+//		wt.waitForElementToBePresent(driver, driver.findElement(By.cssSelector(received_email_css)));
+		driver.findElement(By.cssSelector(received_email_css)).click();
+		Thread.sleep(1000*20);
 		//Check Email Title "Meredith Young - Service Recognition Award Packet"
-		driver.findElement(By.xpath(title_email)).equals("Meredith Young - Service Recognition Award Packet");
-		driver.findElement(By.xpath(head_email)).equals("Service Award Packet Shipped for - Meredith Young");
+		driver.findElement(By.cssSelector(title_email)).equals("Meredith Young - Service Recognition Award Packet");
+		driver.findElement(By.cssSelector(head_email)).equals("Service Award Packet Shipped for - Meredith Young");
 		driver.findElement(By.xpath(body1_email)).equals("\r\n" + 
 				"									Thank you for supporting the TEST, Service Award Program. Your role is critical to the success of the program. It is important to recognize and appreciate our employees for their continued service in helping make TEST a great company.");
 		driver.findElement(By.xpath(body2_email)).equals("\r\n" + 
