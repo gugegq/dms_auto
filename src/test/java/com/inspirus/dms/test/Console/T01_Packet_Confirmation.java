@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
+import com.inspirus.dms.basic.CheckEmail;
 import com.inspirus.dms.basic.ClearEmail;
 import com.inspirus.dms.basic.ElementLocation;
 import com.inspirus.dms.basic.LoginEmail;
@@ -83,12 +84,11 @@ public class T01_Packet_Confirmation {
 	    driver.findElement(By.xpath(my_element.send_btn)).click();
 	    Thread.sleep(1000*5);
 	    //11.到邮箱中查收邮件
-//	    lg_email.LoginEmailTest();
-//	    //12.比对内容检查
-//	    
+	    driver.get(Browsers.Email_URL);
+	    //12.比对内容检查
+	    new CheckEmail().LoginPageTest(driver);
 //	    //13.清空邮箱
-//	    cl_email.ClearEmailTest();
-	    
+//	    cl_email.ClearEmailTest();    
 	    
 	}
 	
