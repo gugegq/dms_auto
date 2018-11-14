@@ -41,7 +41,7 @@ public class FrontLoginPage {
 	//Clear Gmail
 	public static final String check_box = "span.T-Jo";
 	//Recycle
-	public static final String recycle = ".nX > div:nth-child(1)";
+	public static final String recycle = "div.T-I.J-J5-Ji.nX.T-I-ax7.T-I-Js-Gs.mA .asa";
 	
 		
 	// DMS_Console -> Customer Search
@@ -54,7 +54,7 @@ public class FrontLoginPage {
 	}	
 		
 	// Log into the DMS_Console
-	public void login(String login_name,
+	public void login_Console(String login_name,
 			String login_password, WebDriver driver) throws Exception {
 		username.clear();
 		username.sendKeys(login_name);
