@@ -12,7 +12,7 @@ public class LoginEmail {
 		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);
 		
 		
-		//gdfgd
+		//
 		
 	}
 	
