@@ -9,7 +9,9 @@ public class LoginEmail {
 		
 		FrontLoginPage frontLoginPage = new FrontLoginPage(driver);
 //		Login into Gmail.
-		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);		
+		frontLoginPage.login_Email("dmstest117@gmail.com", "K@ppy213", driver);	
+		
+		
 	}
 	
 }
