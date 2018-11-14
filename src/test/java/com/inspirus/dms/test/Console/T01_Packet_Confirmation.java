@@ -88,8 +88,7 @@ public class T01_Packet_Confirmation {
 	    //12.比对内容检查
 	    new CheckEmail().LoginPageTest(driver);
 //	    //13.清空邮箱
-//	    cl_email.ClearEmailTest();    
-	    
+//	    cl_email.ClearEmailTest();	    
 	}
 	
 	@After

@@ -12,7 +12,7 @@ import com.inspirus.dms.basic.ElementLocation;
 import com.inspirus.dms.basic.Wait;
 import com.inspirus.dms.page.FrontLoginPage;
 
-public class Email_Check_for_Packet_Confirmation {
+public class Test_Email_Check_for_Packet_Confirmation {
 	
 	WebDriver driver; 
 	
