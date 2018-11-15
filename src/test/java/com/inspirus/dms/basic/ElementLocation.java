@@ -83,5 +83,46 @@ public class ElementLocation {
 	public static final String  send_preview = "//input[@id='send_preview_to']";	
 	// Send Button	
 	public static final String  send_btn = "//input[@id='send']";
+	
+	
+	
+	// DMS Page
+	// Customer
+	public static final String customer = "#customer-admin > a";
+	// Customer Search Input Box
+	public static final String customer_input = "#customer-admin .dropdown-search-input.typeahead.tt-input";
+	// Choose program Button
+	public static final String choose_program_btn = ".main-page-header .btn.btn-default.dropdown-toggle";
+	// Choose program
+	public static final String program_choose = "#customer-programs-dropdown > li.program-active > a > span.program-code-name";
+	// Recipients Button
+	public static final String recipients = "#recipients-pill > a";
+	// Add New Button
+	public static final String add_new_btn = "#recipients-pill > ul > li:nth-child(3) > a > span";
+	// Recip Info Page
+	// First Name
+	public static final String first_name = "#FirstName";
+	// Last Name
+	public static final String last_name = "#LastName";
+	// Level Button --- use xpath
+	public static final String level_btn = "//*[@id=\"Level\"]";
+	// Level choose --- use xpath
+	public static final String level_no = "";	
+	// EID
+	public static final String eid = "#EmployeeId";
+	// PacketShip Button
+	public static final String packetship_btn = "//*[@id=\"PacketShip\"]";
+	// GiftShip
+	public static final String giftship_btn = "//*[@id=\"GiftShip\"]";
+	// Bill Location
+	public static final String bill_location_btn = "//*[@id=\"Billto\"]";
+	// Anniv. Date
+	public static final String anniv_date = "#AnnivDate";
+	// Serv. Date
+	public static final String serv_date = "#ServerDate";
+	// Save Button
+	public static final String save_btn = "div.col-xs-3 > button.save-button.disabled";
+	
+	// 
 		
 }

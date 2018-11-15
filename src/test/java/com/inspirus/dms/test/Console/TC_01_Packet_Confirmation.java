@@ -15,7 +15,7 @@ import com.inspirus.dms.basic.login.LoginEmail;
 import com.inspirus.dms.page.FrontLoginPage;
 
 //SA4_PacketCommunication Check
-public class T01_Packet_Confirmation {
+public class TC_01_Packet_Confirmation {
 	
 	WebDriver driver;
 	
