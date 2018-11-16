@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Wait {
+public class WaitElement {
 	
 	public static WebElement waitForElementToBePresent(WebDriver driver, WebElement element, long waitTime) {
 		try {

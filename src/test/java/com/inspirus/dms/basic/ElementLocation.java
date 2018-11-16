@@ -91,6 +91,11 @@ public class ElementLocation {
 	public static final String customer = "#customer-admin > a";
 	// Customer Search Input Box
 	public static final String customer_input = "#customer-admin .dropdown-search-input.typeahead.tt-input";
+	public static final String customer_btn = ".tt-suggestion p";
+	public static final String D01000 = "#customer-admin > ul > li:nth-child(2) > a";
+	public static final String D02000 = "#customer-admin > ul > li:nth-child(3) > a";
+	public static final String D08369 = "#customer-admin > ul > li:nth-child(8) > a";
+	public static final String D12276 = "#customer-admin > ul > li:nth-child(9) > a";
 	// Choose program Button
 	public static final String choose_program_btn = ".main-page-header .btn.btn-default.dropdown-toggle";
 	// Choose program

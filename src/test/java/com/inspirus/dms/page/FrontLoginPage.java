@@ -51,7 +51,7 @@ public class FrontLoginPage {
 			String login_password, WebDriver driver) throws Exception {
 		username.clear();
 		username.sendKeys(login_name);
-		Thread.sleep(1000*5);
+		Thread.sleep(1000*2);
 		password.clear();
 		password.sendKeys(login_password);
 		loginBtn.click();
