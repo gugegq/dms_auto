@@ -127,5 +127,18 @@ public class ElementLocation {
 	public static final String serv_date = "#ServerDate";
 	// Save Button
 	public static final String save_btn = "#recip-info .col-xs-3 > .save-button";
+	// Issue Tracker Button
+	public static final String issue_tracker_btn = "#recip-info .col-xs-7 .row.row-offset-1 > div > div > div > a";
+	
+	
+	// Recipients
+	public static final String recipients_btn = "#MainNavigationBar .navbar-collapse.collapse > ul:nth-child(1) > li:nth-child(3) > a";
+	public static final String recipients_input = "#recipSearch";
+	
+	// CONSOLE_Recip Information Page
+	public static final String recipientSelect= "#RecipientSelect";
+	
+	
+	
 		
 }
