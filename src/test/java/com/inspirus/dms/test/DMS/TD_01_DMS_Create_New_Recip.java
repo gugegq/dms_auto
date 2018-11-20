@@ -27,7 +27,6 @@ public class TD_01_DMS_Create_New_Recip {
 	public void create_new_recip()  throws Exception {
 		
 		ElementLocation element = new ElementLocation();
-		ComString cstr = new ComString();
 		WaitElement wt = new WaitElement();
 		
 		//Login DMS Page

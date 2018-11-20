@@ -110,24 +110,22 @@ public class ElementLocation {
 	// Last Name
 	public static final String last_name = "#LastName";
 	// Level Button --- use xpath
-	public static final String level_btn = "//*[@id=\"Level\"]";
+	public static final String level_btn = "Level";
 	// Level choose --- use xpath
 	public static final String level_no = "";	
 	// EID
 	public static final String eid = "#EmployeeId";
 	// PacketShip Button
-	public static final String packetship_btn = "//*[@id=\"PacketShip\"]";
+	public static final String packetship_btn = "PacketShip";
 	// GiftShip
-	public static final String giftship_btn = "//*[@id=\"GiftShip\"]";
+	public static final String giftship_btn = "GiftShip";
 	// Bill Location
-	public static final String bill_location_btn = "//*[@id=\"Billto\"]";
+	public static final String bill_location_btn = "Billto";
 	// Anniv. Date
 	public static final String anniv_date = "#AnnivDate";
 	// Serv. Date
 	public static final String serv_date = "#ServerDate";
 	// Save Button
-	public static final String save_btn = "div.col-xs-3 > button.save-button.disabled";
-	
-	// 
+	public static final String save_btn = "#recip-info .col-xs-3 > .save-button";
 		
 }
