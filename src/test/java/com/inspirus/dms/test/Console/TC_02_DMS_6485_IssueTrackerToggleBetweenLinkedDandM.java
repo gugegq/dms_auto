@@ -17,6 +17,7 @@ import org.testng.Assert;
 
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ComString;
+import com.inspirus.dms.basic.DMS_Func;
 import com.inspirus.dms.basic.ElementLocation;
 import com.inspirus.dms.basic.WaitElement;
 import com.inspirus.dms.basic.login.LoginDMS;
@@ -42,12 +43,7 @@ public class TC_02_DMS_6485_IssueTrackerToggleBetweenLinkedDandM {
 		// Login into DMS Page
 		new LoginDMS().login_dms(driver);
 		Thread.sleep(1000 * 3);
-		// Click Recipients
-		driver.findElement(By.cssSelector(element.recipients_btn)).click();
-		// Input Recipient ID
-		driver.findElement(By.cssSelector(element.recipients_input)).clear();
-		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(cstr.recip_input);
-		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(Keys.ENTER);
+		new DMS_Func().recipients_search(driver, cstr.recip_input);
 		wt.waitForElementToBePresent(driver, driver.findElement(By.cssSelector(element.issue_tracker_btn)));
 		// Click IssueTracker Button
 		driver.findElement(By.cssSelector(element.issue_tracker_btn)).click();
@@ -56,20 +52,15 @@ public class TC_02_DMS_6485_IssueTrackerToggleBetweenLinkedDandM {
 		// Operate in new Page
 		// Switch to new page
 		Set<String> winHandels = driver.getWindowHandles(); // 得到当前窗口的set集合
-		System.out.print(winHandels);
 		System.out.print(winHandels.size());
 
 		List it = new ArrayList(winHandels); // 将set集合存入list对象
 		System.out.println(it.size());
-		// System.out.println(it.get(0));
-		// System.out.println(it.get(1));
-
 		driver.switchTo().window((String) it.get(1)); // 切换到弹出的新窗口
 
 		// Recip Information Page
 		driver.findElement(By.id(element.recipientSelect)).click();
 		Select actual = new Select(driver.findElement(By.id(element.recipientSelect)));
-		System.out.println(actual.getFirstSelectedOption().getText());
 
 		List<WebElement> options = actual.getOptions();
 
