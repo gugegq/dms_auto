@@ -136,7 +136,7 @@ public class ElementLocation {
 	public static final String recipients_input = "#recipSearch";
 	
 	// CONSOLE_Recip Information Page
-	public static final String recipientSelect= "#RecipientSelect";
+	public static final String recipientSelect= "RecipientSelect";
 	
 	
 	
