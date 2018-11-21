@@ -71,16 +71,12 @@ public class TC_02_DMS_6485_IssueTrackerToggleBetweenLinkedDandM {
 		
 		System.out.println(optionSets);
 		
-		Assert.assertTrue(optionSets.size() >= 2 && optionSets.contains("4734259last, 4734259first D01000 DMS 1801")
-				&& optionSets.contains("4734259last, 4734259first 4 M0013 CNG"), "error");
+		//Check the content in DropDown Menu
+		Assert.assertTrue(optionSets.size() >= 2 && optionSets.contains(cstr.excepted_result_dms)
+				&& optionSets.contains(cstr.excepted_result_cng), "Success");
 
-		String actual_result = driver.findElement(By.id(element.recipientSelect)).getText();
-		// System.out.println(actual_result);
-		// assertEquals(actual_result, cstr.excepted_result);
 		Thread.sleep(1000);
-
 		driver.switchTo().window((String) it.get(0)); // 返回至原页面
-
 	}
 
 	@After

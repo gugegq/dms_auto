@@ -18,9 +18,11 @@ public class ComString {
 	
 	//Issue Tracker
 	//Assert Viable
-	public static final String excepted_result= "4734248last, 4734248first D01000 DMS 1801\r\n" + 
-			"4734248last, 4734248first D01000 DMS 1801\r\n" + 
-			"4734248last, 4734248first 4 M0013 CNG";
+	public static final String excepted_result_dms= "4734259last, 4734259first D01000 DMS 1801";
+	public static final String excepted_result_cng= "4734259last, 4734259first 4 M0013 CNG";
+	public static final String excepted_result_r2i= "";
+
+
 	
 
 }
