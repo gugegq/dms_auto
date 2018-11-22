@@ -1,11 +1,16 @@
 package com.inspirus.dms.example;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+
+import com.inspirus.dms.basic.Browsers;
+import com.inspirus.dms.basic.ComString;
+import com.inspirus.dms.basic.CommonLocateElement;
+import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.login.LoginDMS;
 
 public class TestFunc {
 	
@@ -13,23 +18,21 @@ public class TestFunc {
 	
 	@Before
 	public void setUp() throws Exception {
-//		driver = Browsers.myDriver_Email();
+		driver = Browsers.myDriver();
 	}
 	
 	@Test
 	public void test_func() throws Exception {
 		
-		Date date = new Date();
-		System.out.println(date.getDay()+"//"+date.getMonth()+"//"+date.getYear()+"\n");
-		System.out.println(date.getDay()+"\n");
-		System.out.println(date.getMonth()+"\n");
-		System.out.println(date.getYear()+"\n");
+		CommonLocateElement common = new CommonLocateElement();
+		ElementLocation element = new ElementLocation();
+		ComString cstr = new ComString();
 		
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-        SimpleDateFormat df2 = new SimpleDateFormat("MM/dd/yyyy");//设置日期格式
-
-        System.out.println(df.format(new Date()));// new Date()为获取当前系统时间
-        System.out.println(df2.format(new Date()));// new Date()为获取当前系统时间
+		new LoginDMS().login_dms(driver);
+		common.findCss(driver, element.recipients_btn).click();
+		common.findCss(driver, element.recipients_input).clear();
+		common.findCss(driver, element.recipients_input).sendKeys(cstr.recip_input);
+		common.findCss(driver, element.recipients_input).sendKeys(Keys.ENTER);		
 
 	}
 	

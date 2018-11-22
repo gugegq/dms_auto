@@ -10,10 +10,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class common {
+public class CommonLocateElement {
 	
 
-//	'''定位单个元素封装'''
+	//定位单个元素封装
 	public WebElement findID(WebDriver driver, String id) throws Exception {
 		
 	    WebElement f=driver.findElement(By.id(id));
@@ -63,7 +63,7 @@ public class common {
 	}
 
 
-//	'''定位一组元素封装'''
+	//定位一组元素封装
 	public WebElement findsID(WebDriver driver, String id) throws Exception {
 		
 	    WebElement f=driver.findElement(By.id(id));
@@ -113,5 +113,3 @@ public class common {
 	}
 
 }
-
-
