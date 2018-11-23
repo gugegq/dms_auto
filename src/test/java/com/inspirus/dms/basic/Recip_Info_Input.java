@@ -11,7 +11,7 @@ public class Recip_Info_Input {
 	
 	public void recip_info_page_input(WebDriver driver) throws Exception {
 		
-		ElementLocation my_element =  new ElementLocation();
+		pageElements my_element =  new pageElements();
 		ComString cstr = new ComString();
         SimpleDateFormat date = new SimpleDateFormat("MM/dd/yyyy");//设置日期格式
 		

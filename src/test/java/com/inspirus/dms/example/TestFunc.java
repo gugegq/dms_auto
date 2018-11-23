@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ComString;
 import com.inspirus.dms.basic.CommonLocateElement;
-import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.pageElements;
 import com.inspirus.dms.basic.login.LoginDMS;
 
 public class TestFunc {
@@ -25,7 +25,7 @@ public class TestFunc {
 	public void test_func() throws Exception {
 		
 		CommonLocateElement common = new CommonLocateElement();
-		ElementLocation element = new ElementLocation();
+		pageElements element = new pageElements();
 		ComString cstr = new ComString();
 		
 		new LoginDMS().login_dms(driver);

@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class DMS_Func {
 	
 	// Initial my element
-	ElementLocation element = new ElementLocation();
+	pageElements element = new pageElements();
 	WaitElement wt = new WaitElement();
 	ComString cstr = new ComString();	
 	

@@ -3,7 +3,7 @@ package com.inspirus.dms.basic;
 import org.openqa.selenium.WebDriver;
 
 
-public class ElementLocation {
+public class pageElements {
 	
 	WebDriver driver;
 	

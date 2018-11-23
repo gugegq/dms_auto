@@ -8,7 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ComString;
-import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.pageElements;
 import com.inspirus.dms.basic.Recip_Info_Input;
 import com.inspirus.dms.basic.WaitElement;
 import com.inspirus.dms.basic.login.LoginDMS;
@@ -26,7 +26,7 @@ public class TD_01_DMS_Create_New_Recip {
 	@Test	
 	public void create_new_recip()  throws Exception {
 		
-		ElementLocation element = new ElementLocation();
+		pageElements element = new pageElements();
 		WaitElement wt = new WaitElement();
 		
 		//Login DMS Page

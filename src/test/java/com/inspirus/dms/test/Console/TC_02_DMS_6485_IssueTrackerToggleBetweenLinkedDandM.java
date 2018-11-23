@@ -17,7 +17,7 @@ import org.testng.Assert;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.ComString;
 import com.inspirus.dms.basic.DMS_Func;
-import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.pageElements;
 import com.inspirus.dms.basic.WaitElement;
 import com.inspirus.dms.basic.login.LoginDMS;
 
@@ -35,7 +35,7 @@ public class TC_02_DMS_6485_IssueTrackerToggleBetweenLinkedDandM {
 	public void Test_IssueTrackerBetweenDandM() throws Exception {
 
 		// Initial my element
-		ElementLocation element = new ElementLocation();
+		pageElements element = new pageElements();
 		WaitElement wt = new WaitElement();
 		ComString cstr = new ComString();
 

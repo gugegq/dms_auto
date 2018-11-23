@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import com.inspirus.dms.basic.Browsers;
 import com.inspirus.dms.basic.CheckEmail;
 import com.inspirus.dms.basic.ClearEmail;
-import com.inspirus.dms.basic.ElementLocation;
+import com.inspirus.dms.basic.pageElements;
 import com.inspirus.dms.basic.login.LoginConsole;
 import com.inspirus.dms.basic.login.LoginEmail;
 import com.inspirus.dms.page.FrontLoginPage;
@@ -29,7 +29,7 @@ public class TC_01_DMS_6452_PacketConfirmationCheck {
 	public void Test_SA4_PacketCommunication() throws Exception {
 		
 		//Initial my element
-		ElementLocation my_element = new ElementLocation();
+		pageElements my_element = new pageElements();
 		
 		//Login into DMS_Console page.
 		new LoginConsole().login_console(driver); 
