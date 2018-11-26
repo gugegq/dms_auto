@@ -2,6 +2,7 @@ package com.inspirus.dms.basic;
 
 public class ComString {
 	
+	//Customer
 	public static final String customer_id = "D01000";
 	public static final String program_code = "1801";
 	public static final String cng_code = "M0013";
@@ -25,6 +26,9 @@ public class ComString {
 	//4734259last, 4734259first 4 M0013 CNG
 	public static final String excepted_result_cng= recip_input+"last, "+recip_input+"first 4 "+cng_code+" CNG";
 	public static final String excepted_result_r2i= "";
+	
+	//Common Variable
+	public static final long stime = 5000;
 
 
 	

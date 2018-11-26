@@ -1,6 +1,5 @@
 package com.inspirus.dms.test.Console;
 
-import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,8 +10,7 @@ import com.inspirus.dms.basic.CheckEmail;
 import com.inspirus.dms.basic.ClearEmail;
 import com.inspirus.dms.basic.pageElements;
 import com.inspirus.dms.basic.login.LoginConsole;
-import com.inspirus.dms.basic.login.LoginEmail;
-import com.inspirus.dms.page.FrontLoginPage;
+
 
 //SA4_PacketCommunication Check
 public class TC_01_DMS_6452_PacketConfirmationCheck {
