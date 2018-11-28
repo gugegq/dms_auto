@@ -30,5 +30,15 @@ public class DMS_Func {
 		
 		
 	}
+	
+	public void products_search(WebDriver driver, String product_id) throws Exception {
+
+		driver.findElement(By.cssSelector(element.products_btn)).click();
+		// Input Products ID
+		driver.findElement(By.cssSelector(element.products_input)).clear();
+		driver.findElement(By.cssSelector(element.products_input)).sendKeys(product_id);
+		driver.findElement(By.cssSelector(element.products_input)).sendKeys(Keys.ENTER);		
+	}
+	
 
 }
