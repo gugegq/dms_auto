@@ -139,7 +139,6 @@ public class pageElements {
 	public static final String products_btn = "#MainNavigationBar .navbar-collapse.collapse > ul:nth-child(1) > li:nth-child(5) > a";
 	public static final String products_input = "#productsSearch";
 	
-	
 	// CONSOLE_Recip Information Page
 	public static final String recipientSelect= "RecipientSelect";
 	
