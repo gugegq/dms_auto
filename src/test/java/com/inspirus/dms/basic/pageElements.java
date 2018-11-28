@@ -139,6 +139,10 @@ public class pageElements {
 	public static final String products_btn = "#MainNavigationBar .navbar-collapse.collapse > ul:nth-child(1) > li:nth-child(5) > a";
 	public static final String products_input = "#prouductsSearch";
 	
+	// Customer
+	public static final String customer_btn_2 = "#customer-admin > a";
+	public static final String customer_input_2 = "#customer-admin .taBringFwd .dropdown-search-input.typeahead.tt-input";	
+	
 	// CONSOLE_Recip Information Page
 	public static final String recipientSelect= "RecipientSelect";
 	

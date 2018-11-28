@@ -6,7 +6,12 @@ public class ComString {
 	public static final String customer_id = "D01000";
 	public static final String program_code = "1801";
 	public static final String cng_code = "M0013";
-
+	
+	//Customer ID
+	public static final String D01000 = "D01000 - TEST";	
+	public static final String D02000 = "D02000 - Bridgestone Americas, Inc.";
+	public static final String D08369 = "D08369 - Humana";	
+	public static final String D12276 = "D12276 - The Lubrizol Corporation";
 	
 	//Recip Info
 	public static final String first_name = "Dms_Recip_F";

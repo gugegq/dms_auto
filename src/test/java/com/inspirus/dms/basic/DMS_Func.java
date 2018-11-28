@@ -25,7 +25,11 @@ public class DMS_Func {
 	//Customer
 	public void customer_search(WebDriver driver, String customer_id) throws Exception {
 		
-		
+		driver.findElement(By.cssSelector(element.customer_btn_2)).click();
+		// Input Recipient ID
+		driver.findElement(By.cssSelector(element.customer_input_2)).clear();
+		driver.findElement(By.cssSelector(element.customer_input_2)).sendKeys(customer_id);
+		driver.findElement(By.cssSelector(element.customer_input_2)).sendKeys(Keys.ENTER);	
 		
 	}
 	
