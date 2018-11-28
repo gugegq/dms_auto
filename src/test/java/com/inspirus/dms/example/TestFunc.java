@@ -24,6 +24,7 @@ public class TestFunc {
 		
 		new LoginDMS().login_dms(driver);
 		new DMS_Func().customer_search(driver, ComString.D01000);
+		Thread.sleep(1000*20);
 		new DMS_Func().customer_search(driver, ComString.D02000);
 		Thread.sleep(1000*20);
 
