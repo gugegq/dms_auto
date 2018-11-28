@@ -20,8 +20,6 @@ public class DMS_Func {
 		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(recip_id);
 		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(Keys.ENTER);
 		
-		//
-		
 	}
 	
 	//Customer
@@ -29,6 +27,16 @@ public class DMS_Func {
 		
 		
 		
+	}
+	
+	//Products
+	public void products_search(WebDriver driver, String products_id) throws Exception {
+		
+		driver.findElement(By.cssSelector(element.products_btn)).click();
+		// Input Recipient ID
+		driver.findElement(By.cssSelector(element.products_input)).clear();
+		driver.findElement(By.cssSelector(element.products_input)).sendKeys(products_id);
+		driver.findElement(By.cssSelector(element.products_input)).sendKeys(Keys.ENTER);		
 	}
 
 }

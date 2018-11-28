@@ -135,6 +135,10 @@ public class pageElements {
 	public static final String recipients_btn = "#MainNavigationBar .navbar-collapse.collapse > ul:nth-child(1) > li:nth-child(3) > a";
 	public static final String recipients_input = "#recipSearch";
 	
+	// Products
+	public static final String products_btn = "#MainNavigationBar .navbar-collapse.collapse > ul:nth-child(1) > li:nth-child(5) > a";
+	public static final String products_input = "#prouductsSearch";
+	
 	// CONSOLE_Recip Information Page
 	public static final String recipientSelect= "RecipientSelect";
 	
