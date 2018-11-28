@@ -22,7 +22,6 @@ public class TestFunc {
 		
 		new LoginDMS().login_dms(driver);
 		new DMS_Func().products_search(driver, "BD706");
-		Thread.sleep(1000*10);
 
 	}
 	
