@@ -18,7 +18,9 @@ public class DMS_Func {
 		// Input Recipient ID
 		driver.findElement(By.cssSelector(element.recipients_input)).clear();
 		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(recip_id);
-		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(Keys.ENTER);	
+		driver.findElement(By.cssSelector(element.recipients_input)).sendKeys(Keys.ENTER);
+		
+		//
 		
 	}
 	
