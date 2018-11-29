@@ -19,6 +19,6 @@ import com.inspirus.dms.test.Console.TC_02_DMS_6485_IssueTrackerToggleBetweenLin
 	TC_02_DMS_6485_IssueTrackerToggleBetweenLinkedDandM.class
 	})
 
-public class AllTest01 {
+public class RunTests {
 	
 }
